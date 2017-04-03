@@ -1,7 +1,25 @@
-<router-outlet></router-outlet>
-
-<div class="container">
-  <div class="notification">
-    This container is <strong>centered</strong> on desktop.
+<div class="background hero is-fullheight">
+  <div class="hero-head">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          Cabeça
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="hero-foot">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          Pé
+        </p>
+      </div>
+    </div>
   </div>
 </div>
