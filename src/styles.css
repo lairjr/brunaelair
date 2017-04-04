@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+.hero .hero-head {
+  background-color: white;
+}
+
+.hero .hero-foot {
+  background-color: white;
+}

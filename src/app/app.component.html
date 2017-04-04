@@ -1,42 +1,50 @@
-<div class="background hero is-fullheight">
+<div class="background hero is-fullheight is-fullwidth">
   <div class="hero-head">
-    <div class="container">
+    <div class="container has-text-centered">
       <nav class="nav">
         <div class="nav-center">
-          <a class="nav-item" href="/">
+          <a class="nav-item is-hidden-mobile" href="/">
             Home
           </a>
-          <a class="nav-item" href="/confirmation">
-            <span class="icon">
-              <i class="fa fa-address-book"></i>
-            </span>
+          <a class="nav-item is-hidden-mobile" href="/confirmation">
             Confirme sua Presença
           </a>
-          <a class="nav-item" href="/honeymoon">
+          <a class="nav-item is-hidden-mobile" href="/honeymoon">
             Cota para Lua de Mel
           </a>
         </div>
 
         <span class="nav-toggle">
-          <span>Home</span>
-          <span>Confirme sua Presença</span>
-          <span>Cota para Lua de Mel</span>
+          <span></span>
+          <span></span>
+          <span></span>
         </span>
       </nav>
     </div>
   </div>
   <div class="hero-body">
     <div class="container has-text-centered">
-      <router-outlet></router-outlet>
+      <div class="tile is-ancestor is-8" style="margin: auto;">
+        <div class="tile is-parent">
+          <article class="tile is-child">
+            <router-outlet></router-outlet>
+          </article>
+        </div>
+      </div>
     </div>
   </div>
   <div class="hero-foot">
     <div class="container">
-      <div class="content has-text-centered">
-        <p>
-          Pé
-        </p>
-      </div>
+      <nav class="nav">
+        <div class="nav-center">
+          <a class="nav-item">
+            154 dias
+          </a>
+          <a class="nav-item">
+            160 confirmados
+          </a>
+        </div>
+      </nav>
     </div>
   </div>
 </div>
