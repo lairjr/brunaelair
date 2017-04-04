@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { ConfirmationComponent } from './confirmation/component';
 import { HoneyMoonComponent } from './honeymoon/component';
 import { HomeComponent } from './home/component';
 
@@ -12,6 +13,10 @@ const appRoutes: Routes = [
   {
     path: 'honeymoon',
     component: HoneyMoonComponent
+  },
+  {
+    path: 'confirmation',
+    component: ConfirmationComponent
   },
   { path: '',
     component: HomeComponent
@@ -24,6 +29,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    ConfirmationComponent,
     HomeComponent,
     HoneyMoonComponent
   ],
