@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "7"
+script:
+  - ng build
+deploy:
+  provider: heroku
+  api_key:
+    secure: ehS935uyWa18vD5NAHXt09ryd5fymulQa2AK5VcID3xRg3a2fqHQNe7EfmbiCJm46JG8RhQP9HNJZcTzcWP1mPp9OmV1bZiptd6jwitiR+g4D9lgRaFvlv1QcnNNiSAWNa2kbiR6D+LUeouQNlvffOECVP7oUt3gRSOhKVdylvmkMxk+k5qNXC/UjF1VJVGbzTZv+UKJGPC25IFZPrLMNAZP5ZNDsiuqRlff+/tUlVpu5Ac94fIvJ0XC2tfrOv6Bh/fEOfn8/Drw+vFjdmscZLCWgAMvKZfG2TP/rm+yIucPAr8YSl+7irzIb4gMzlSLuhVo0PyP8ukEewFL+jhgueDHl5GQWrIG/RsmuAiLIqT82laJCHrTJWVi9S03QTlwowvzLAqOFvhb7QWDIhDEtu7Ju82q+menZNhyVQ289hErlT+Zl/0FHE50ROkyqXSeWXTuMzSp1Ptn+RYmeFGMN25RDh42vxkNYS/Z18nE0GPY7i+1vryj9iUWy9EZTt/BnasoB4WpStLpc//lVc+MPJoMGIwQIcN+UV25YbrqD8XMMVLKqem1qrpWFzLuyo+gA3gAJ0vUn/No4gafTyfs5SSSnwgqZnyrxABQiaxqIKhwW7sM/jmOI+CXzdwNHdfQjMi+xgbS1CFDSV+YZzJ6V8/Iy6yB870aKE6EZIVusZo=
+  app: brunaelair
