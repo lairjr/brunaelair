@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ConfirmationComponent } from './confirmation/component';
 import { HoneyMoonComponent } from './honeymoon/component';
 import { HomeComponent } from './home/component';
+import { TipsComponent } from './tips/component';
 
 const appRoutes: Routes = [
   {
@@ -17,6 +18,10 @@ const appRoutes: Routes = [
   {
     path: 'confirmation',
     component: ConfirmationComponent
+  },
+  {
+    path: 'tips',
+    component: TipsComponent
   },
   { path: '',
     component: HomeComponent
@@ -31,7 +36,8 @@ const appRoutes: Routes = [
     AppComponent,
     ConfirmationComponent,
     HomeComponent,
-    HoneyMoonComponent
+    HoneyMoonComponent,
+    TipsComponent
   ],
   imports: [
     BrowserModule,
