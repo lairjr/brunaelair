@@ -24,7 +24,11 @@
               <small>R$ 100,00</small>
               <br />
               <br />
-              <a class="button is-primary">Comprar</a>
+              <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+                <input type="hidden" name="code" value="42246C50F9F9977994F70FB26379ED46" />
+                <input type="hidden" name="iot" value="button" />
+                <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/120x53-comprar.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+              </form>
             </div>
           </div>
         </div>
