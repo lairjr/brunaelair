@@ -2,87 +2,32 @@
   <p class="title">Lista de Presentes</p>
   <p class="subtitle">Subtitle</p>
   <div class="content">
-    <div class="columns">
-      <div class="column is-one-third">
+    <div class="columns is-multiline">
+      <div class="column is-one-third" *ngFor="let gift of gifts">
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="https://media.bizj.us/view/img/6926112/screen-shot-2014-06-25-at-122653-pm750xx977-550-0-78*750xx750-422-0-0.png" alt="Image">
+              <img src="{{ gift.image }}" alt="Image">
             </figure>
           </div>
           <div class="card-content">
             <div class="media">
               <div class="media-content">
-                <p class="title is-4">Jantar Applebes</p>
+                <p class="title is-4">{{ gift.title }}</p>
               </div>
             </div>
 
             <div class="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Phasellus nec iaculis mauris.
+              {{ gift.content }}
               <br />
-              <small>R$ 100,00</small>
+              <small>R$ {{ gift.price }}</small>
               <br />
               <br />
               <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
                 <input type="hidden" name="code" value="42246C50F9F9977994F70FB26379ED46" />
                 <input type="hidden" name="iot" value="button" />
-                <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/120x53-comprar.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                <input type="submit" class="button is-primary" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" value="Comprar"/>
               </form>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-one-third">
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://media.bizj.us/view/img/6926112/screen-shot-2014-06-25-at-122653-pm750xx977-550-0-78*750xx750-422-0-0.png" alt="Image">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-content">
-                <p class="title is-4">Jantar Applebes</p>
-              </div>
-            </div>
-
-            <div class="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Phasellus nec iaculis mauris.
-              <br />
-              <small>R$ 100,00</small>
-              <br />
-              <br />
-              <a class="button is-primary">Comprar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="column is-one-third">
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://media.bizj.us/view/img/6926112/screen-shot-2014-06-25-at-122653-pm750xx977-550-0-78*750xx750-422-0-0.png" alt="Image">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-content">
-                <p class="title is-4">Jantar Applebes</p>
-              </div>
-            </div>
-
-            <div class="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Phasellus nec iaculis mauris.
-              <br />
-              <small>R$ 100,00</small>
-              <br />
-              <br />
-              <a class="button is-primary">Comprar</a>
             </div>
           </div>
         </div>
