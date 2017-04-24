@@ -5,8 +5,12 @@ h1 {
 }
 
 .background {
-  background-image: url("~/img/bg.jpg");
+  background-image: url("~/img/bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.marsala-font {
+  color: #742b59;
 }
