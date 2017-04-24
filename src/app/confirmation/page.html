@@ -1,1 +1,59 @@
-Confirmação
+<article class="tile is-child box">
+  <p class="title">Confirme sua presença</p>
+  <p class="subtitle">Subtitle</p>
+  <div class="content">
+    <div class="columns">
+      <div class="column has-text-left">
+        <form>
+          <div class="field">
+            <label class="label">Nome</label>
+            <p class="control">
+              <input class="input" type="text" placeholder="Nome">
+            </p>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <p class="control">
+              <input class="input" type="text" placeholder="exemplo@exemplo.com.br">
+            </p>
+          </div>
+
+          <div class="field">
+            <label class="label">
+              Acompanhantes
+              <span class="icon" (click)="addGuest()">
+                <i class="fa fa-plus-circle"></i>
+              </span>
+            </label>
+            <div class="columns is-multiline" *ngFor="let guest of info.guests">
+              <div class="column is-10">
+                <p class="control">
+                  <input class="input" type="text" placeholder="Nome">
+                </p>
+              </div>
+              <div class="column is-2 has-text-centered">
+                <span class="icon">
+                  <i class="fa fa-minus-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <p class="control">
+              <button class="button is-primary" (click)="save()">Enviar</button>
+            </p>
+            <p class="control">
+              <button class="button is-link">Cancel</button>
+            </p>
+            <p class="help is-success">{{ saveInfo }}</p>
+          </div>
+        </form>
+      </div>
+      <div class="column">
+        Second column
+      </div>
+    </div>
+  </div>
+</article>
