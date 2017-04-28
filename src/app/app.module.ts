@@ -58,7 +58,7 @@ const firebaseAuthConfig = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, { useHash: true }),
     AngularFireModule.initializeApp(firebaseConfig, firebaseAuthConfig)
   ],
   providers: [],
