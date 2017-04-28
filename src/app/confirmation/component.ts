@@ -1,9 +1,15 @@
 import { Component } from '@angular/core';
+import { AngularFire } from 'angularfire2';
 
 @Component({
   templateUrl: './page.html'
 })
 export class ConfirmationComponent {
+  constructor(public af: AngularFire) {
+    this.af.auth.login({ email: 'lairjr@outlook.com', password: 'casamentodev' });
+    this.guestsDb = this.af.database.list('/guests', { });
+  }
+  guestsDb;
   info = {
     name: '',
     email: '',
@@ -13,6 +19,7 @@ export class ConfirmationComponent {
   };
   saveInfo = '';
   save(formInfo) {
+    this.guestsDb.push(formInfo);
     this.saveInfo = 'Obrigado, aguardamos você!';
   }
   addGuest(newGuest) {
