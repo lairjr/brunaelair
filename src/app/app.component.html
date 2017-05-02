@@ -1,21 +1,36 @@
 <div class="background hero is-fullheight is-fullwidth">
   <div class="hero-head ">
-    <div class="container has-text-centered" style="padding: 1rem; font-size: large;">
+    <div class="container has-text-centered is-hidden-touch" style="padding: 1rem; font-size: large;">
       <nav class="level">
-        <p class="level-item has-text-centered">
+        <p class="nav-item level-item has-text-centered">
           <a class="link marsala-font" href="#/">Como chegar</a>
         </p>
-        <p class="level-item has-text-centered">
+        <p class="nav-item level-item has-text-centered">
           <a class="link marsala-font" href="#/tips">Dicas úteis</a>
         </p>
-        <p class="level-item has-text-centered">
+        <p class="nav-item level-item has-text-centered">
           <a class="link marsala-font" href="#/confirmation">Confirme sua presença</a>
         </p>
-        <p class="level-item has-text-centered">
+        <p class="nav-item level-item has-text-centered">
           <a class="link marsala-font" href="#/honeymoon">Lista de presentes</a>
         </p>
       </nav>
     </div>
+
+    <nav class="nav is-hidden-desktop">
+      <span class="nav-toggle" (click)="toogleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+
+      <div class="nav-menu" [ngClass]="openMobileMenu ? 'is-active' : ''">
+        <a class="nav-item marsala-font" href="#/" (click)="toogleMenu()">Como chegar</a>
+        <a class="nav-item marsala-font" href="#/tips" (click)="toogleMenu()">Dicas úteis</a>
+        <a class="nav-item marsala-font" href="#/confirmation" (click)="toogleMenu()">Confirme sua presença</a>
+        <a class="nav-item marsala-font" href="#/honeymoon" (click)="toogleMenu()">Lista de presentes</a>
+      </div>
+    </nav>
   </div>
   <div class="hero-body">
     <div class="container has-text-centered">
