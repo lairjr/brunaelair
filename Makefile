@@ -6,3 +6,6 @@ bash:
 
 app:
 	docker-compose up
+
+build:
+	docker run -v ~/My_Projects/brunaELair:/webapp -t -i --rm node ng build --prod
