@@ -1,18 +1,23 @@
 <div class="background hero is-fullheight is-fullwidth">
   <div class="hero-head ">
-    <div class="container has-text-centered is-hidden-touch" style="padding: 1rem; font-size: large;">
+    <div class="container has-text-centered is-hidden-touch" style="padding: 0.2rem; font-size: large;">
       <nav class="level">
         <p class="nav-item level-item has-text-centered">
-          <a class="link marsala-font" href="#/">Como chegar</a>
+          <a class="link wedding-font" href="#/" style="font-size: 2rem;">Como chegar</a>
         </p>
         <p class="nav-item level-item has-text-centered">
-          <a class="link marsala-font" href="#/tips">Dicas úteis</a>
+          <a class="link wedding-font" href="#/confirmation" style="font-size: 2rem;">Confirme sua presença</a>
+        </p>
+        <p class="level-item has-text-centered">
+          <a class="link wedding-font" href="#/">
+            <img src="assets/jail.png" alt="" style="padding: 0;">
+          </a>
         </p>
         <p class="nav-item level-item has-text-centered">
-          <a class="link marsala-font" href="#/confirmation">Confirme sua presença</a>
+          <a class="link wedding-font" href="#/tips" style="font-size: 2rem;">Dicas úteis</a>
         </p>
         <p class="nav-item level-item has-text-centered">
-          <a class="link marsala-font" href="#/honeymoon">Lista de presentes</a>
+          <a class="link wedding-font" href="#/honeymoon" style="font-size: 2rem;">Lista de presentes</a>
         </p>
       </nav>
     </div>
@@ -25,10 +30,11 @@
       </span>
 
       <div class="nav-menu" [ngClass]="openMobileMenu ? 'is-active' : ''">
-        <a class="nav-item marsala-font" href="#/" (click)="toogleMenu()">Como chegar</a>
-        <a class="nav-item marsala-font" href="#/tips" (click)="toogleMenu()">Dicas úteis</a>
-        <a class="nav-item marsala-font" href="#/confirmation" (click)="toogleMenu()">Confirme sua presença</a>
-        <a class="nav-item marsala-font" href="#/honeymoon" (click)="toogleMenu()">Lista de presentes</a>
+        <a class="nav-item wedding-font" href="#/" (click)="toogleMenu()" style="font-size: 2rem;">Inicial</a>
+        <a class="nav-item wedding-font" href="#/" (click)="toogleMenu()" style="font-size: 2rem;">Como chegar</a>
+        <a class="nav-item wedding-font" href="#/confirmation" (click)="toogleMenu()" style="font-size: 2rem;">Confirme sua presença</a>
+        <a class="nav-item wedding-font" href="#/tips" (click)="toogleMenu()" style="font-size: 2rem;">Dicas úteis</a>
+        <a class="nav-item wedding-font" href="#/honeymoon" (click)="toogleMenu()" style="font-size: 2rem;">Lista de presentes</a>
       </div>
     </nav>
   </div>
