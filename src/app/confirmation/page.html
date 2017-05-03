@@ -9,65 +9,63 @@
         <div class="box">
           <form (ngSubmit)="save(info)" novalidate>
             <div class="field">
-              <label class="label">Nome*</label>
+              <label class="wedding-font highlight-subtitle">Nome<strong>*</strong></label>
               <p class="control">
-                <input class="input" type="text" placeholder="Nome" [(ngModel)]="info.name" name="name">
+                <input class="input has-text-centered" type="text" placeholder="Nome" [(ngModel)]="info.name" name="name">
               </p>
             </div>
 
             <div class="field">
-              <label class="label">Email*</label>
+              <label class="wedding-font highlight-subtitle">Email<strong>*</strong></label>
               <p class="control">
-                <input class="input" type="text" placeholder="exemplo@exemplo.com.br" [(ngModel)]="info.email" name="email">
+                <input class="input has-text-centered" type="text" placeholder="exemplo@exemplo.com.br" [(ngModel)]="info.email" name="email">
               </p>
             </div>
 
-            <div class="field">
-              <label class="label">
-                Acompanhantes
-              </label>
-              <div class="columns is-multiline" >
-                <div class="column is-12" *ngFor="let guest of info.guests">
-                  <div class="columns">
-                    <div class="column is-10" >
-                      {{ guest }}
-                    </div>
-                    <div class="column is-2 has-text-centered">
-                      <span class="icon">
-                        <i class="fa fa-minus-circle" (click)="removeGuest(guest)"></i>
-                      </span>
-                    </div>
+            <div class="field" style="margin-bottom: 0rem;">
+              <label class="wedding-font highlight-subtitle">Acompanhantes</label>
+            </div>
+
+            <div class="columns is-multiline" >
+              <div class="column is-12" *ngFor="let guest of info.guests">
+                <div class="columns">
+                  <div class="column is-10" >
+                    {{ guest }}
+                  </div>
+                  <div class="column is-2 has-text-centered">
+                    <span class="icon">
+                      <i class="fa fa-minus-circle" (click)="removeGuest(guest)"></i>
+                    </span>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="columns ">
-                <div class="column is-10">
-                  <div class="control">
-                    <input class="input" type="text" placeholder="Nome" [(ngModel)]="info.newGuest" name="newGuest">
-                  </div>
-                  <p class="help is-info">
-                    Não obrigatório
+            <div class="field has-addons">
+              <p class="control is-expanded">
+                <input class="input has-text-centered" type="text" placeholder="Nome" [(ngModel)]="info.newGuest" name="newGuest">
+              </p>
+              <p class="control">
+                <a class="button is-info marsala-background">
+                  <i class="fa fa-plus-circle" (click)="addGuest(info.newGuest)"></i>
+                </a>
+              </p>
+            </div>
+
+            <div class="columns">
+              <div class="column is-8 is-offset-4">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <button class="button is-primary marsala-background" type="submit">Enviar</button>
                   </p>
-                </div>
-                <div class="column is-2 has-text-centered">
-                  <span class="icon">
-                    <i class="fa fa-plus-circle" (click)="addGuest(info.newGuest)"></i>
-                  </span>
+                  <p class="control">
+                    <button class="button is-link">Cancel</button>
+                  </p>
+                  <p class="help is-success">{{ saveInfo }}</p>
                 </div>
               </div>
             </div>
 
-            <div class="field is-grouped">
-              <p class="control">
-                <button class="button is-primary" type="submit">Enviar</button>
-              </p>
-              <p class="control">
-                <button class="button is-link">Cancel</button>
-              </p>
-              <p class="help is-success">{{ saveInfo }}</p>
-            </div>
-            
           </form>
         </div>
       </div>

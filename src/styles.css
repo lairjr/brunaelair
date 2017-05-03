@@ -6,6 +6,10 @@ body {
   background-color: white;
 }
 
+.marsala-background {
+  background-color: #742b59 !important;
+}
+
 .wedding-font {
   font-family: 'Tangerine', serif;
   color: #742b59 !important;
