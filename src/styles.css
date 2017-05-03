@@ -6,6 +6,16 @@ body {
   background-color: white;
 }
 
-.hero .hero-foot {
-  background-color: white;
+.wedding-font {
+  font-family: 'Tangerine', serif;
+  color: #742b59 !important;
+}
+
+.highlight-title {
+  font-size: 4rem !important;
+  font-weight: bold !important;
+}
+
+.highlight-subtitle {
+  font-size: 2rem !important;
 }
