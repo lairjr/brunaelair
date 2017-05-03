@@ -6,7 +6,7 @@
   <div class="content">
     <div class="columns">
       <div class="column is-8 is-offset-2">
-        <div class="box">
+        <div class="box has-text-centered">
           <form (ngSubmit)="save(info)" novalidate>
             <div class="field">
               <label class="wedding-font highlight-subtitle">Nome<strong>*</strong></label>
@@ -63,7 +63,7 @@
             </div>
           </form>
 
-          <div class="columns">
+          <div class="columns" style="margin-bottom: 0rem;">
             <div class="column is-8 is-offset-4">
               <div class="field is-grouped">
                 <p class="control">
@@ -75,10 +75,11 @@
                 <p class="control">
                   <button class="button is-link">Cancel</button>
                 </p>
-                <p class="help is-success">{{ saveInfo }}</p>
               </div>
             </div>
           </div>
+
+          <p class="help is-success" style="margin-top: 0rem;">{{ saveInfo }}</p>
         </div>
       </div>
     </div>
