@@ -19,6 +19,10 @@ body {
   /*font-weight: bold !important;*/
 }
 
+.page-title {
+  font-size: 5rem !important;
+}
+
 .rouge-font {
   font-family: 'Rouge Script', serif;
 }
