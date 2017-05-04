@@ -10,8 +10,7 @@ body {
   background-color: #742b59 !important;
 }
 
-.wedding-font {
-  font-family: 'Rouge Script', serif;
+.marsala-color {
   color: #742b59 !important;
 }
 
@@ -20,6 +19,18 @@ body {
   /*font-weight: bold !important;*/
 }
 
+.rouge-font {
+  font-family: 'Rouge Script', serif;
+}
+
+.bubbler-font {
+  font-family: 'Bubbler One', serif;
+}
+
 .highlight-subtitle {
   font-size: 2rem !important;
+}
+
+.text-content {
+  font-size: 1.5rem;
 }
