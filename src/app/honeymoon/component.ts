@@ -18,8 +18,8 @@ export class HoneyMoonComponent {
       price: "100,00"
     },
     {
-      image: "http://www.magnoliabakery.com/wp-content/uploads/2013/12/Magnolia-Bakery-Dubai-Store.jpg",
-      title: "Café na Magnolia Bakery",
+      image: "https://3.bp.blogspot.com/-xZQWz9fbhxw/VrA37VDYqAI/AAAAAAAAAoc/mBT4oK7tm0w/s640/comparadores-aluguel-de-carro.jpg",
+      title: "Alguél de carro",
       content: "Conteúdo",
       price: "100,00"
     },
@@ -60,26 +60,26 @@ export class HoneyMoonComponent {
       price: "100,00"
     },
     {
-      image: "http://cdn.mntm.me/24/e6/d3/The-Top-Five-Las-Vegas-Family-Hotels-24e6d30f4e324ef6b921588fff4b0e87.jpg",
-      title: "Hotel Las Vegas",
-      content: "Conteúdo",
-      price: "100,00"
-    },
-    {
       image: "http://www.bestourism.com/img/items/big/91/The-United-States-of-America-_Universal-Studio-in-Los-Angeles-California_156.jpg",
       title: "Ingresso Parque da Universal",
       content: "Conteúdo",
       price: "100,00"
     },
     {
-      image: "https://3.bp.blogspot.com/-xZQWz9fbhxw/VrA37VDYqAI/AAAAAAAAAoc/mBT4oK7tm0w/s640/comparadores-aluguel-de-carro.jpg",
-      title: "Alguél de carro",
+      image: "http://www.magnoliabakery.com/wp-content/uploads/2013/12/Magnolia-Bakery-Dubai-Store.jpg",
+      title: "Café na Magnolia Bakery",
       content: "Conteúdo",
       price: "100,00"
     },
     {
       image: "http://adc-usa.com/wp-content/uploads/2013/10/TCF-HB-3520-copy.jpg",
       title: "Jantar no Cheesecake Factory",
+      content: "Conteúdo",
+      price: "100,00"
+    },
+    {
+      image: "http://cdn.mntm.me/24/e6/d3/The-Top-Five-Las-Vegas-Family-Hotels-24e6d30f4e324ef6b921588fff4b0e87.jpg",
+      title: "Hotel Las Vegas",
       content: "Conteúdo",
       price: "100,00"
     }

@@ -1,32 +1,37 @@
-<article class="tile is-child box">
-  <p class="title">Lista de Presentes</p>
-  <p class="subtitle">Subtitle</p>
-  <div class="content">
+<article class="tile is-child">
+  <p class="title rouge-font marsala-color page-title">Lista de presentes</p>
+  <p class="subtitle"></p>
+  <div class="content bubbler-font marsala-color text-content">
+    <p>
+      Caso queiram nos presentiar, indicamos que seja em forma de cotas de Lua de Mel, onde você pode nos presentiar com passeios e comidas na nossa viagem de Lua de Mel.
+    </p>
+    <p>
+      <small class="bubbler-font marsala-color">Confira o que queremos curtir:</small>
+    </p>
     <div class="columns is-multiline">
       <div class="column is-one-third" *ngFor="let gift of gifts">
-        <div class="card">
+        <div class="card" style="border-radius: 5px;">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="{{ gift.image }}" alt="Image">
+              <img src="{{ gift.image }}" alt="Image" style="border-radius: 5px 5px 0px 0px;">
             </figure>
           </div>
           <div class="card-content">
             <div class="media">
               <div class="media-content">
-                <p class="title is-4">{{ gift.title }}</p>
+                <p class="title is-4 marsala-color">{{ gift.title }}</p>
               </div>
             </div>
 
             <div class="content">
-              {{ gift.content }}
+              <small class="marsala-color">{{ gift.content }}</small>
               <br />
-              <small>R$ {{ gift.price }}</small>
+              <small class="marsala-color">R$ {{ gift.price }}</small>
               <br />
-              <br />
-              <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+              <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;" style="margin-top: 5px;">
                 <input type="hidden" name="code" value="42246C50F9F9977994F70FB26379ED46" />
                 <input type="hidden" name="iot" value="button" />
-                <input type="submit" class="button is-primary" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" value="Comprar"/>
+                <input type="submit" class="button is-primary marsala-background" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" value="Comprar"/>
               </form>
             </div>
           </div>
