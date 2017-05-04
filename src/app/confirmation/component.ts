@@ -18,8 +18,35 @@ export class ConfirmationComponent {
     newGuest: ''
   };
   saveInfo = '';
+  usedEmail = false;
+  tempInfo = {
+    key: '',
+    name: '',
+    guests: []
+  };
+  isUpdateRequest = false;
+  validateEmail(email) {
+    this.usedEmail = false;
+    let guests = this.af.database.list('/guests', { preserveSnapshot: true });
+    guests.subscribe(snapshots => {
+      if (!this.isUpdateRequest) {
+        snapshots.forEach(snapshot => {
+          let guestData = snapshot.val();
+          if (guestData.email === email) {
+            this.usedEmail = true;
+            this.tempInfo = guestData;
+            this.tempInfo.key = snapshot.key;
+          }
+        });
+      }
+    });
+  }
   save(formInfo) {
-    this.guestsDb.push(formInfo);
+    if (this.isUpdateRequest) {
+      this.guestsDb.update(this.tempInfo.key, formInfo);
+    } else {
+      this.guestsDb.push(formInfo);
+    }
     this.saveInfo = 'Obrigado, aguardamos você!';
   }
   addGuest(newGuest) {
@@ -31,5 +58,14 @@ export class ConfirmationComponent {
     if (index > -1) {
        this.info.guests.splice(index, 1);
     }
+  }
+  onEmailBlur(email) {
+    this.validateEmail(email);
+  }
+  useTempData() {
+    this.usedEmail = false;
+    this.isUpdateRequest = true;
+    this.info.name = this.tempInfo.name;
+    this.info.guests = (this.tempInfo.guests.length > 0) ? this.tempInfo.guests : [];
   }
 }

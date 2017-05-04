@@ -30,7 +30,14 @@
                   placeholder="exemplo@exemplo.com.br"
                   [(ngModel)]="info.email"
                   name="email"
+                  (blur)="onEmailBlur(info.email)"
                   required>
+              </p>
+              <p class="help is-danger" style="margin-top: 0rem;" *ngIf="usedEmail">
+                E-mail já cadastrado
+              </p>
+              <p class="help is-info" style="margin-top: 0rem;" *ngIf="usedEmail" (click)="useTempData()">
+                Atualizar cadastro?
               </p>
             </div>
 
