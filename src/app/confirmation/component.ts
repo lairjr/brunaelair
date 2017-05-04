@@ -25,6 +25,7 @@ export class ConfirmationComponent {
     guests: []
   };
   isUpdateRequest = false;
+  errorMessage = '';
   validateEmail(email) {
     this.usedEmail = false;
     let guests = this.af.database.list('/guests', { preserveSnapshot: true });
@@ -42,12 +43,17 @@ export class ConfirmationComponent {
     });
   }
   save(formInfo) {
-    if (this.isUpdateRequest) {
-      this.guestsDb.update(this.tempInfo.key, formInfo);
-    } else {
-      this.guestsDb.push(formInfo);
+    this.validaInfo(formInfo);
+
+    if (!this.errorMessage) {
+      if (this.isUpdateRequest) {
+        this.guestsDb.update(this.tempInfo.key, formInfo);
+      } else {
+        this.isUpdateRequest = true;
+        this.guestsDb.push(formInfo);
+      }
+      this.saveInfo = 'Obrigado, aguardamos você!';
     }
-    this.saveInfo = 'Obrigado, aguardamos você!';
   }
   addGuest(newGuest) {
     this.info.guests.push(newGuest);
@@ -67,5 +73,30 @@ export class ConfirmationComponent {
     this.isUpdateRequest = true;
     this.info.name = this.tempInfo.name;
     this.info.guests = (this.tempInfo.guests.length > 0) ? this.tempInfo.guests : [];
+  }
+  validaInfo(info) {
+    if (!info.name || !info.email) {
+      this.errorMessage = 'Nome e e-mail são obrigatórios.';
+    } else {
+      this.errorMessage = '';
+    }
+  }
+  clear() {
+    this.info = {
+      name: '',
+      email: '',
+      guests: [
+      ],
+      newGuest: ''
+    };
+    this.saveInfo = '';
+    this.usedEmail = false;
+    this.tempInfo = {
+      key: '',
+      name: '',
+      guests: []
+    };
+    this.isUpdateRequest = false;
+    this.errorMessage = '';
   }
 }
