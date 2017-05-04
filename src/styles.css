@@ -11,13 +11,13 @@ body {
 }
 
 .wedding-font {
-  font-family: 'Tangerine', serif;
+  font-family: 'Rouge Script', serif;
   color: #742b59 !important;
 }
 
 .highlight-title {
-  font-size: 4rem !important;
-  font-weight: bold !important;
+  font-size: 7rem !important;
+  /*font-weight: bold !important;*/
 }
 
 .highlight-subtitle {
