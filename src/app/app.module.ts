@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { ConfirmationComponent } from './confirmation/component';
 import { HoneyMoonComponent } from './honeymoon/component';
 import { HomeComponent } from './home/component';
-import { LocationComponent } from './location/component';
+import { AboutUsComponent } from './aboutus/component';
 import { TipsComponent } from './tips/component';
 
 const appRoutes: Routes = [
@@ -22,8 +22,8 @@ const appRoutes: Routes = [
     component: ConfirmationComponent
   },
   {
-    path: 'location',
-    component: LocationComponent
+    path: 'aboutus',
+    component: AboutUsComponent
   },
   {
     path: 'tips',
@@ -57,7 +57,7 @@ const firebaseAuthConfig = {
     ConfirmationComponent,
     HomeComponent,
     HoneyMoonComponent,
-    LocationComponent,
+    AboutUsComponent,
     TipsComponent
   ],
   imports: [
