@@ -30,7 +30,7 @@
               <small class="marsala-color">R$ {{ gift.price }}</small>
               <br />
               <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;" style="margin-top: 5px;">
-                <input type="hidden" name="code" value="FB3CF8072B2B1C0664268F8D45295F7C" />
+                <input type="hidden" name="code" value="{{ gift.pagSeguroValue }}" />
                 <input type="hidden" name="iot" value="button" />
                 <input type="submit" class="button is-primary marsala-background" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" value="Comprar"/>
               </form>
