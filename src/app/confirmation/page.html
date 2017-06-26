@@ -10,7 +10,20 @@
         <div class="box has-text-centered">
           <form (ngSubmit)="save(info)" novalidate>
             <div class="field">
-              <label class="bubbler-font marsala-color text-content">Email<strong>*</strong></label>
+              <label class="bubbler-font marsala-color text-content">Nome<strong class="rouge-font">*</strong></label>
+              <p class="control">
+                <input
+                  class="input has-text-centered"
+                  type="text"
+                  placeholder="Nome"
+                  [(ngModel)]="info.name"
+                  name="name"
+                  required>
+              </p>
+            </div>
+
+            <div class="field">
+              <label class="bubbler-font marsala-color text-content">Email<strong class="rouge-font">*</strong></label>
               <p class="control">
                 <input
                   class="input has-text-centered"
@@ -21,24 +34,11 @@
                   (blur)="onEmailBlur(info.email)"
                   required>
               </p>
-              <p class="help is-danger" style="margin-top: 0rem;" *ngIf="usedEmail">
+              <p class="help is-danger bubbler-font" style="margin-top: 0rem;" *ngIf="usedEmail">
                 E-mail já cadastrado
               </p>
-              <p class="help is-info" style="margin-top: 0rem;" *ngIf="usedEmail" (click)="useTempData()">
+              <p class="help is-info bubbler-font" style="margin-top: 0rem;" *ngIf="usedEmail" (click)="useTempData()">
                 Atualizar cadastro?
-              </p>
-            </div>
-
-            <div class="field">
-              <label class="bubbler-font marsala-color text-content">Nome<strong>*</strong></label>
-              <p class="control">
-                <input
-                  class="input has-text-centered"
-                  type="text"
-                  placeholder="Nome"
-                  [(ngModel)]="info.name"
-                  name="name"
-                  required>
               </p>
             </div>
 
@@ -72,23 +72,17 @@
           </form>
 
           <div class="columns" style="margin-bottom: 0rem;">
-            <div class="column is-8 is-offset-4">
-              <div class="field is-grouped">
-                <p class="control">
-                  <button
-                    class="button is-primary marsala-background"
-                    type="button"
-                    (click)="save(info)">Salvar</button>
-                </p>
-                <p class="control">
-                  <button class="button is-link" (click)="clear()">Limpar</button>
-                </p>
-              </div>
+            <div class="column is-half is-offset-one-quarter">
+              <button
+                class="button is-primary marsala-background"
+                type="button"
+                (click)="save(info)">Salvar</button>
+              <button class="button is-link" (click)="clear()">Limpar</button>
             </div>
           </div>
 
-          <p class="help is-success" style="margin-top: 0rem;">{{ saveInfo }}</p>
-          <p class="help is-danger" style="margin-top: 0rem;">{{ errorMessage }}</p>
+          <p class="help is-success bubbler-font marsala-color" style="margin-top: 0rem;">{{ saveInfo }}</p>
+          <p class="help is-danger bubbler-font" style="margin-top: 0rem;">{{ errorMessage }}</p>
         </div>
       </div>
     </div>
