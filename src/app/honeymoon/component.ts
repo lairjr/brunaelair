@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
 export class HoneyMoonComponent {
   pagSeguroPrices = {
     100: '5CDC4B8E4E4E02F004F79FAE4C250497',
+    150: '2530A5566E6E00ACC4798FB532504259',
     200: '830AD1CEECEC9D9884C7AFB48A151167',
-    350: '4E4FB1A3404060D664E26FB9F53B19A5',
-    600: 'D87BBF39E7E72EE554AD9F926174EE72'
+    350: '4E4FB1A3404060D664E26FB9F53B19A5'
   }
   gifts = [
     {
@@ -22,8 +22,8 @@ export class HoneyMoonComponent {
       image: "https://media-cdn.tripadvisor.com/media/photo-s/09/64/03/b9/ristorante-al-mare.jpg",
       title: "Jantar no al Mare",
       content: "Uma gostasa comida italiana à beira do oceano pacífico, no píer de Santa Monica.",
-      price: "100,00",
-      pagSeguroValue: this.pagSeguroPrices['100']
+      price: "150,00",
+      pagSeguroValue: this.pagSeguroPrices['150']
     },
     {
       image: "https://3.bp.blogspot.com/-xZQWz9fbhxw/VrA37VDYqAI/AAAAAAAAAoc/mBT4oK7tm0w/s640/comparadores-aluguel-de-carro.jpg",
@@ -50,8 +50,8 @@ export class HoneyMoonComponent {
       image: "https://media-cdn.tripadvisor.com/media/photo-s/0b/af/33/3e/diagon-alley.jpg",
       title: "Tour no Studios da Warner",
       content: "O que, eu ouvi estúdio do Friends? O noivo pira!",
-      price: "100,00",
-      pagSeguroValue: this.pagSeguroPrices['100']
+      price: "150,00",
+      pagSeguroValue: this.pagSeguroPrices['150']
     },
     {
       image: "http://img0.svcdn.lasvegas.com/v3/cache/lasvegas/32EDBB89E244184BBBD471B36DCB28A4.jpg",
@@ -64,15 +64,15 @@ export class HoneyMoonComponent {
       image: "http://www.cplosangeles.com/photogallery/large/hotel/los-angeles-california-hotel-exterior-building.jpg",
       title: "Hotel Los Angeles",
       content: "A viagem termina em Hollywood. A ideia é explorar algum hotel com vista para o letreiro, quem sabe! =)",
-      price: "100,00",
-      pagSeguroValue: this.pagSeguroPrices['100']
+      price: "200,00",
+      pagSeguroValue: this.pagSeguroPrices['200']
     },
     {
       image: "http://www.bestourism.com/img/items/big/91/The-United-States-of-America-_Universal-Studio-in-Los-Angeles-California_156.jpg",
       title: "Ingresso Parque da Universal",
       content: "Quase não curtimos parques, né?! Talvez essa seja a maior expectativa da noiva: ver Hogwarts de pertinho de novo.",
-      price: "600,00",
-      pagSeguroValue: this.pagSeguroPrices['600']
+      price: "350,00",
+      pagSeguroValue: this.pagSeguroPrices['350']
     },
     {
       image: "http://www.magnoliabakery.com/wp-content/uploads/2013/12/Magnolia-Bakery-Dubai-Store.jpg",
@@ -92,8 +92,8 @@ export class HoneyMoonComponent {
       image: "http://cdn.mntm.me/24/e6/d3/The-Top-Five-Las-Vegas-Family-Hotels-24e6d30f4e324ef6b921588fff4b0e87.jpg",
       title: "Hotel Las Vegas",
       content: "A terra dos hotéis incríveis. A ideia é ficarmos bem centralizados, com a opção de retorno imediato em caso de “perda total” com os drinks de Vegas.",
-      price: "100,00",
-      pagSeguroValue: this.pagSeguroPrices['100']
+      price: "200,00",
+      pagSeguroValue: this.pagSeguroPrices['200']
     }
   ];
 }
