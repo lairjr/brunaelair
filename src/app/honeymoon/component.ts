@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
 })
 export class HoneyMoonComponent {
   pagSeguroPrices = {
+    80: '5F4ADF52CCCC975CC40B6FB5DB2C8BC4',
     100: '5CDC4B8E4E4E02F004F79FAE4C250497',
     150: '2530A5566E6E00ACC4798FB532504259',
     200: '830AD1CEECEC9D9884C7AFB48A151167',
@@ -43,8 +44,8 @@ export class HoneyMoonComponent {
       image: "http://www.westland.net/venice/images/birdseye.jpg",
       title: "Drinks na praia de Venice Beach",
       content: "O casal bom de copo não vai sair de Venice Beach sem provar os drinks famosos da Califa.",
-      price: "100,00",
-      pagSeguroValue: this.pagSeguroPrices['100']
+      price: "150,00",
+      pagSeguroValue: this.pagSeguroPrices['150']
     },
     {
       image: "https://media-cdn.tripadvisor.com/media/photo-s/0b/af/33/3e/diagon-alley.jpg",
@@ -78,15 +79,15 @@ export class HoneyMoonComponent {
       image: "http://www.magnoliabakery.com/wp-content/uploads/2013/12/Magnolia-Bakery-Dubai-Store.jpg",
       title: "Café na Magnolia Bakery",
       content: "Os melhores cupcakes da América. “Moça, me vê uma caixa de Red Velvet, por favor!”",
-      price: "100,00",
-      pagSeguroValue: this.pagSeguroPrices['100']
+      price: "80,00",
+      pagSeguroValue: this.pagSeguroPrices['80']
     },
     {
       image: "http://adc-usa.com/wp-content/uploads/2013/10/TCF-HB-3520-copy.jpg",
       title: "Jantar no Cheesecake Factory",
       content: "O restaurante é para garantida toda vez na terra do Tio Sam. De entrada, o bolinho de batata. Depois, aquela carbonara para compartilhar.",
-      price: "100,00",
-      pagSeguroValue: this.pagSeguroPrices['100']
+      price: "200,00",
+      pagSeguroValue: this.pagSeguroPrices['200']
     },
     {
       image: "http://cdn.mntm.me/24/e6/d3/The-Top-Five-Las-Vegas-Family-Hotels-24e6d30f4e324ef6b921588fff4b0e87.jpg",
