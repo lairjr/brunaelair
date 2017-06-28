@@ -85,7 +85,7 @@ export class HoneyMoonComponent {
     {
       image: "http://adc-usa.com/wp-content/uploads/2013/10/TCF-HB-3520-copy.jpg",
       title: "Jantar no Cheesecake Factory",
-      content: "O restaurante é para garantida toda vez na terra do Tio Sam. De entrada, o bolinho de batata. Depois, aquela carbonara para compartilhar.",
+      content: "O restaurante é parada obrigatória toda vez na terra do Tio Sam. De entrada, o bolinho de batata. Depois, aquela carbonara para compartilhar.",
       price: "200,00",
       pagSeguroValue: this.pagSeguroPrices['200']
     },
