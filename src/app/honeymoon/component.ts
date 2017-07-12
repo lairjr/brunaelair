@@ -28,7 +28,7 @@ export class HoneyMoonComponent {
     },
     {
       image: "https://3.bp.blogspot.com/-xZQWz9fbhxw/VrA37VDYqAI/AAAAAAAAAoc/mBT4oK7tm0w/s640/comparadores-aluguel-de-carro.jpg",
-      title: "Alguél de carro",
+      title: "Aluguel de carro",
       content: "Metade da trip vai rolar de carro. Vamos fazer a Big Sur, de San Francisco a Los Angeles de caranga.",
       price: "200,00",
       pagSeguroValue: this.pagSeguroPrices['200']
