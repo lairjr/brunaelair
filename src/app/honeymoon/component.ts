@@ -95,6 +95,48 @@ export class HoneyMoonComponent {
       content: "A terra dos hotéis incríveis. A ideia é ficarmos bem centralizados, com a opção de retorno imediato em caso de “perda total” com os drinks de Vegas.",
       price: "200,00",
       pagSeguroValue: this.pagSeguroPrices['200']
+    },
+    {
+      image: "https://www.lasvegasjaunt.com/wp-content/uploads/2014/09/grand-canyon-landing-helicopter-tour.jpg",
+      title: "Passeio Grand Canyon",
+      content: "A noiva é apaixonada por vistas. Riscar o Grand Canyon da lista de lugares pra visitar na vida é missão dessa viagem.",
+      price: "350,00",
+      pagSeguroValue: this.pagSeguroPrices['350']
+    },
+    {
+      image: "https://cdn.tutsplus.com/photo/authors/legacy/Jose%20Antunes/2012/12/12/virtualworlds08.jpg",
+      title: "Passagem Aérea de Los Angeles para Las Vegas",
+      content: "Metade da viagem será de carro, a outra de aéreo. O trajeto ente LA e LV é tiro curto, de uma horinha.",
+      price: "200,00",
+      pagSeguroValue: this.pagSeguroPrices['200']
+    },
+    {
+      image: "http://1.bp.blogspot.com/-PDK9yDaqGzQ/VGFLS1E-srI/AAAAAAAAeoQ/N3RGT4pe4yQ/s1600/Disneyland-California-Parque-Los-Angeles.jpg",
+      title: "Ingresso Disneyland",
+      content: "Não podia ser diferente, né? Um dos dias mais esperados pelo casal apaixonado por parques é conhecer mais uma Disney! =)",
+      price: "150,00",
+      pagSeguroValue: this.pagSeguroPrices['150']
+    },
+    {
+      image: "https://cdnph.upi.com/svc/sv/upi_com/6571500346329/2017/1/96a868bf0161e635401d1daa83df8a0d/Florida-man-on-bail-for-manslaughter-wins-100k-in-Las-Vegas-poker-tournament.jpg",
+      title: "Rodada de pôquer em Las Vegas",
+      content: "O noivo é das apostas e curte pôquer. Que tal um all in em pleno cassino de Vegas?",
+      price: "100,00",
+      pagSeguroValue: this.pagSeguroPrices['100']
+    },
+    {
+      image: "http://www.visitwpb.com/wp-content/uploads/2015/06/Sky-Bikes-in-West-Palm-Beach-1.jpg",
+      title: "Aluguel de Bicicleta",
+      content: "Vai rolar aquele rolê de bike por Venice Beach, ceeerto!",
+      price: "80,00",
+      pagSeguroValue: this.pagSeguroPrices['80']
+    },
+    {
+      image: "https://s-media-cache-ak0.pinimg.com/736x/1c/ba/eb/1cbaeb55b0b13b55bbf480fbb6d3f43c.jpg",
+      title: "Degustação de Cervejas Artesanais em Mission District / San Francisco",
+      content: "Oi? Falou em Ceva? Artesanal? Assim o casal não resiste!",
+      price: "100,00",
+      pagSeguroValue: this.pagSeguroPrices['100']
     }
   ];
 }
